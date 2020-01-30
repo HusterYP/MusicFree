@@ -14,6 +14,7 @@
 		8F10869323E06276000CBAD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F10869123E06276000CBAD3 /* Main.storyboard */; };
 		8F10869523E06276000CBAD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F10869423E06276000CBAD3 /* Assets.xcassets */; };
 		8F10869823E06276000CBAD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F10869623E06276000CBAD3 /* LaunchScreen.storyboard */; };
+		8FA5C43523E069DA000CB7DF /* ImageResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA5C43423E069DA000CB7DF /* ImageResource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		8F10869423E06276000CBAD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F10869723E06276000CBAD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8F10869923E06276000CBAD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FA5C43423E069DA000CB7DF /* ImageResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageResource.swift; sourceTree = "<group>"; };
 		CBA4607EFF1CA178DF461647 /* Pods-MusicFree.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicFree.release.xcconfig"; path = "Target Support Files/Pods-MusicFree/Pods-MusicFree.release.xcconfig"; sourceTree = "<group>"; };
 		D46C74BBA858C6F7E37FB903 /* Pods-MusicFree.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicFree.debug.xcconfig"; path = "Target Support Files/Pods-MusicFree/Pods-MusicFree.debug.xcconfig"; sourceTree = "<group>"; };
 		E0797EA157B01A29E61CD6F3 /* Pods_MusicFree.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MusicFree.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,8 +74,9 @@
 		8F10868A23E06276000CBAD3 /* MusicFree */ = {
 			isa = PBXGroup;
 			children = (
+				8FA5C43323E068D4000CB7DF /* Source */,
+				8FA5C43223E068C0000CB7DF /* Resource */,
 				8F10869F23E0628A000CBAD3 /* Support Files */,
-				8F10868F23E06276000CBAD3 /* HomeController.swift */,
 				8F10869423E06276000CBAD3 /* Assets.xcassets */,
 				8F10869923E06276000CBAD3 /* Info.plist */,
 			);
@@ -89,6 +92,22 @@
 				8F10869623E06276000CBAD3 /* LaunchScreen.storyboard */,
 			);
 			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		8FA5C43223E068C0000CB7DF /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				8FA5C43423E069DA000CB7DF /* ImageResource.swift */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		8FA5C43323E068D4000CB7DF /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				8F10868F23E06276000CBAD3 /* HomeController.swift */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 		BAF0DDFD5C749EB4EC5012F1 /* Frameworks */ = {
@@ -215,6 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F10869023E06276000CBAD3 /* HomeController.swift in Sources */,
+				8FA5C43523E069DA000CB7DF /* ImageResource.swift in Sources */,
 				8F10868C23E06276000CBAD3 /* AppDelegate.swift in Sources */,
 				8F10868E23E06276000CBAD3 /* SceneDelegate.swift in Sources */,
 			);
@@ -360,7 +380,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D46C74BBA858C6F7E37FB903 /* Pods-MusicFree.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5MC78M9RWB;
 				INFOPLIST_FILE = MusicFree/Info.plist;
@@ -379,7 +399,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CBA4607EFF1CA178DF461647 /* Pods-MusicFree.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5MC78M9RWB;
 				INFOPLIST_FILE = MusicFree/Info.plist;
