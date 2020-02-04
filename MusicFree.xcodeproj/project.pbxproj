@@ -14,7 +14,12 @@
 		8F10869323E06276000CBAD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F10869123E06276000CBAD3 /* Main.storyboard */; };
 		8F10869523E06276000CBAD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F10869423E06276000CBAD3 /* Assets.xcassets */; };
 		8F10869823E06276000CBAD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F10869623E06276000CBAD3 /* LaunchScreen.storyboard */; };
+		8F64668F23E6E11F009BA23D /* LoginBaseInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F64668E23E6E11F009BA23D /* LoginBaseInputView.swift */; };
+		8F64669123E6E174009BA23D /* NameInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F64669023E6E174009BA23D /* NameInputView.swift */; };
+		8F64669323E6E428009BA23D /* PasswordInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F64669223E6E428009BA23D /* PasswordInputView.swift */; };
 		8FA5C43523E069DA000CB7DF /* ImageResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA5C43423E069DA000CB7DF /* ImageResource.swift */; };
+		8FBB39EF23E2EC6400C0DC52 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBB39EE23E2EC6400C0DC52 /* LoginViewController.swift */; };
+		8FF7A4C2240A6D9400110A80 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF7A4C1240A6D9400110A80 /* LoginViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,7 +31,12 @@
 		8F10869423E06276000CBAD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F10869723E06276000CBAD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8F10869923E06276000CBAD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F64668E23E6E11F009BA23D /* LoginBaseInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginBaseInputView.swift; sourceTree = "<group>"; };
+		8F64669023E6E174009BA23D /* NameInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameInputView.swift; sourceTree = "<group>"; };
+		8F64669223E6E428009BA23D /* PasswordInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordInputView.swift; sourceTree = "<group>"; };
 		8FA5C43423E069DA000CB7DF /* ImageResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageResource.swift; sourceTree = "<group>"; };
+		8FBB39EE23E2EC6400C0DC52 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8FF7A4C1240A6D9400110A80 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		CBA4607EFF1CA178DF461647 /* Pods-MusicFree.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicFree.release.xcconfig"; path = "Target Support Files/Pods-MusicFree/Pods-MusicFree.release.xcconfig"; sourceTree = "<group>"; };
 		D46C74BBA858C6F7E37FB903 /* Pods-MusicFree.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicFree.debug.xcconfig"; path = "Target Support Files/Pods-MusicFree/Pods-MusicFree.debug.xcconfig"; sourceTree = "<group>"; };
 		E0797EA157B01A29E61CD6F3 /* Pods_MusicFree.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MusicFree.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,9 +115,38 @@
 		8FA5C43323E068D4000CB7DF /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				8FBB39F023E30B1200C0DC52 /* BaseView */,
+				8FBB39ED23E2EC5300C0DC52 /* Auth */,
 				8F10868F23E06276000CBAD3 /* HomeController.swift */,
 			);
 			path = Source;
+			sourceTree = "<group>";
+		};
+		8FBB39ED23E2EC5300C0DC52 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				8FBB39F323E3269400C0DC52 /* View */,
+				8FBB39EE23E2EC6400C0DC52 /* LoginViewController.swift */,
+				8FF7A4C1240A6D9400110A80 /* LoginViewModel.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		8FBB39F023E30B1200C0DC52 /* BaseView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BaseView;
+			sourceTree = "<group>";
+		};
+		8FBB39F323E3269400C0DC52 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8F64668E23E6E11F009BA23D /* LoginBaseInputView.swift */,
+				8F64669023E6E174009BA23D /* NameInputView.swift */,
+				8F64669223E6E428009BA23D /* PasswordInputView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		BAF0DDFD5C749EB4EC5012F1 /* Frameworks */ = {
@@ -233,10 +272,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F64669323E6E428009BA23D /* PasswordInputView.swift in Sources */,
 				8F10869023E06276000CBAD3 /* HomeController.swift in Sources */,
 				8FA5C43523E069DA000CB7DF /* ImageResource.swift in Sources */,
+				8F64669123E6E174009BA23D /* NameInputView.swift in Sources */,
+				8F64668F23E6E11F009BA23D /* LoginBaseInputView.swift in Sources */,
 				8F10868C23E06276000CBAD3 /* AppDelegate.swift in Sources */,
 				8F10868E23E06276000CBAD3 /* SceneDelegate.swift in Sources */,
+				8FBB39EF23E2EC6400C0DC52 /* LoginViewController.swift in Sources */,
+				8FF7A4C2240A6D9400110A80 /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

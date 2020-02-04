@@ -10,4 +10,6 @@ target 'MusicFree' do
   pod 'SwiftyJSON'
   pod 'Alamofire'
   pod 'SnapKit'
+  pod 'RxCocoa'
+  pod 'RxRelay'
 end

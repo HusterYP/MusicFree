@@ -13,5 +13,20 @@ class HomeController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let button = UIButton(frame: .zero)
+        button.setTitle("Click To Push", for: .normal)
+        button.backgroundColor = .gray
+        button.addTarget(self, action: #selector(clickToPush), for: .touchUpInside)
+        view.addSubview(button)
+        button.snp.makeConstraints { (make) in
+            make.center.equalToSuperview()
+        }
+    }
+
+    @objc
+    private func clickToPush() {
+        let viewModel = LoginViewModel()
+        let controller = LoginViewController(viewModel: viewModel)
+        navigationController?.present(controller, animated: true)
     }
 }
